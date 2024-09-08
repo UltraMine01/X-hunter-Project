@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X HUNTER PROJECT - Layanan Digital Produk</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="xhunter.png" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="hero-banner.png" />
+
+    <!--link scroll  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container" >
+        <a href="#" class="logo">X HUNTER PROJECT</a>
+
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo">X HUNTER PROJECT</a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#service" class="navbar-link" data-nav-link>Services</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#feature" class="navbar-link" data-nav-link>Features</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#project" class="navbar-link" data-nav-link>Portfolio</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="https://wa.me/6281279886471"  class="btn btn-primary has-before has-after"
+          >Pesan Sekarang</a
+        >
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" id="home" aria-label="hero">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">
+                Membangun Produk,<span class="has-before"> Merek </span>,
+                Pengalaman Digital
+              </h1>
+
+              <p class="hero-text">
+                <span style="font-weight: bold;">X HUNTER (PROJECT) </span>Menyediakan solusi IT dan
+                pemrograman yang membantu mahasiswa dan perusahaan kecil dalam
+                menyelesaikan masalah teknologi mereka dengan efisien dan
+                terjangkau. Dengan memberikan layanan yang handal dan
+                berkualitas, kami bertujuan untuk menjadi mitra terpercaya yang
+                dapat diandalkan oleh klien kami.
+              </p>
+
+              <div class="wrapper">
+                <a href="https://wa.me/6281279886471" class="btn btn-primary has-before has-after"
+                  >Konsultasi Sekarang</a
+                >
+
+                <button class="hero-btn" aria-label="pixology promo">
+                  <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+
+                  <a href="https://vt.tiktok.com/ZS2PU1qKu/" onclick="showVideo()"> <span class="span">  Cara Kerja Team </a> </span>
+                </button>
+              </div>
+
+              <ul class="social-list">
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61565426197020"
+                    class="social-link"
+                    style="--color: hsl(241, 77%, 63%)"
+                  >
+                    <ion-icon name="logo-facebook"></ion-icon>
+
+                    <span class="span">Facebook</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.instagram.com/xhunterproject?igsh=bWQzdnR0cWFxOG8="
+                    class="social-link"
+                    style="--color: hsl(0, 100%, 50%)"
+                  >
+                    <ion-icon name="logo-instagram"></ion-icon>
+
+                    <span class="span">Instagram</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.tiktok.com/@x_hunter_project?_t=8p0SyKktAkD&_r=1"
+                    class="social-link"
+                    style="--color: hsl(203, 89%, 53%)"
+                  >
+                  <ion-icon name="logo-tiktok"></ion-icon>
+
+                    <span class="span">TikTok</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <figure class="hero-banner">
+              <img
+                src="xhunter.png"
+                width="794"
+                height="637"
+                alt="hero banner"
+                class="w-100"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section class="section service" id="service" aria-label="service">
+          <div data-aos="fade-up"
+          data-aos-duration="3000" class="container">
+            <p class="section-subtitle has-before text-center">Layanan Kami</p>
+
+            <h2 class="h2 section-title text-center">
+              Mengelola Bisnis/Project Anda Dengan 
+              <span class="has-before">Layanan Terbaik Kami</span>
+            </h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card" style="--color: 174, 77%, 50%">
+                  <div class="card-icon">
+                    <img
+                      src="service-icon-1.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Product Management</a>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 267, 76%, 57%">
+                  <div class="card-icon">
+                    <img
+                      src="service-icon-2.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Web & Mobile Development</a>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 17, 100%, 68%">
+                  <div class="card-icon">
+                    <img
+                      src="service-icon-3.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Fast Customer Support</a>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 343, 98%, 60%">
+                  <div class="card-icon">
+                    <img
+                      src="service-icon-4.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Human Resources</a>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 210, 100%, 53%">
+                  <div class="card-icon">
+                    <img
+                      src="service-icon-5.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Design and Vreatives</a>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 157, 89%, 44%">
+                  <div class="card-icon">
+                    <img
+                      src="service-icon-6.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Meketing and Communication</a
+                    >
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card" style="--color: 52, 98%, 50%">
+                  <div class="card-icon">
+                    <img
+                      src="service-icon-7.png"
+                      width="30"
+                      height="30"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Business Development</a>
+                  </h3>
+                </div>
+              </li>
+
+              <li>
+                <a href="#" class="link-card" style="--color: 203, 97%, 75%">
+                  <span class="span">04 More Service</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #FEATURE
+      -->
+
+        <section class="section feature" id="feature" aria-label="feature">
+          <div class="container">
+            <figure class="feature-banner">
+              <img
+                src="feature-banner.png"
+                width="582"
+                height="585"
+                loading="lazy"
+                alt="feature banner"
+                class="w-100"
+              />
+            </figure>
+
+            <div data-aos="fade-up"
+            data-aos-duration="3000" class="feature-content">
+              <p class="section-subtitle has-before">Mengapa Memilih kami</p>
+
+              <h2 class="h2 section-title">
+                Spesialis dalam mendorong klien menghadapi 
+                <span class="has-before">tantangan keuangan</span>
+              </h2>
+
+              <ul class="feature-list">
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon" style="--color: 174, 77%, 50%">
+                      <ion-icon
+                        name="rocket-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="h3 card-title">Proses kerja cepat</h3>
+
+                      <p class="card-text">
+                        Di X HUNTER PROJECT kami mengkhususkan diri dalam merancang, membangun, dan memfasilitasi klien dalam bidang IT Development.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon" style="--color: 241, 77%, 63%">
+                      <ion-icon
+                        name="people-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="h3 card-title">Tim yang Profesional</h3>
+
+                      <p class="card-text">
+                        Kami memiliki tim yang Profesional dan berpengalaman dalam mengatasi kebutuhan klien.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon" style="--color: 343, 98%, 60%">
+                      <ion-icon
+                        name="headset-sharp"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="h3 card-title">Dukungan 24/7 jam</h3>
+
+                      <p class="card-text">
+                        Kami memberikan dukungan 24/7 jam untuk menangani kebutuhan klien.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #PROJECT
+      -->
+
+        <section class="section project" id="project" aria-label="project">
+          <div class="container">
+            <p class="section-subtitle has-before text-center">Projects</p>
+
+            <h2 class="h2 section-title text-center">
+              X HUNTER complete <span class="has-before">project</span>
+            </h2>
+
+            <ul class="filter-list">
+              <li>
+                <button class="filter-btn active" data-filter-btn>
+                  Website
+                </button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn>Landing Page</button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn>iOS App</button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn>Landing Page</button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn>
+                  Branding Design
+                </button>
+              </li>
+            </ul>
+
+            <ul data-aos="fade-up"
+            data-aos-duration="3000" class="grid-list">
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 835; --height: 429"
+                  >
+                    <img
+                      src="g1.png"
+                      width="835"
+                      height="429"
+                      loading="lazy"
+                      alt="Book art design"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Portfolio Project</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">Website Design</a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 416; --height: 429"
+                  >
+                    <img
+                      src="g2.png"
+                      width="416"
+                      height="429"
+                      loading="lazy"
+                      alt="Graphic Design"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Dasboard Akademik</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">Website Design</a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 416; --height: 429"
+                  >
+                    <img
+                      src="g3.png"
+                      width="416"
+                      height="429"
+                      loading="lazy"
+                      alt="3d Digital Art"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Dasboard Akademik</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">Website Design</a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 416; --height: 429"
+                  >
+                    <img
+                      src="g4.png"
+                      width="416"
+                      height="429"
+                      loading="lazy"
+                      alt="Web Design"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Web Design Busines</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">Website Design</a>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 416; --height: 429"
+                  >
+                    <img
+                      src="g5.png"
+                      width="416"
+                      height="429"
+                      loading="lazy"
+                      alt="Mobile App Design"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title">CRUD Bio Data Mahasiswa</a>
+                    </h3>
+
+                    <a href="#" class="card-tag">Website Design</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #NEWSLETTER
+      -->
+
+        <section
+          data-aos="fade-right" data-aos-duration="3000"
+          class="section newsletter has-bg-image"
+          aria-label="newsletter"
+          style="background-image: url('newsletter-bg.jpg')"
+        >
+          <div class="container">
+            <figure class="newsletter-banner">
+              <img
+                src="newsletter-banner.png"
+                width="355"
+                height="356"
+                loading="lazy"
+                alt="newsletter banner"
+                class="w-100"
+              />
+            </figure>
+
+            <div class="newsletter-content">
+              <p class="section-subtitle has-before">Dapatkan setiap pembaruan</p>
+
+              <h2 class="h2 section-title">
+                Berlangganan berita nanti dapatkan pembaruan dan penawaran terbaru
+              </h2>
+
+              <form action="" class="newsletter-form">
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Enter your mail"
+                  required
+                  class="email-field"
+                />
+
+                <button
+                  type="submit"
+                  class="btn btn-secondary has-before has-after"
+                >
+                  <span class="span">Subscribe</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #BLOG
+      -->
+
+        <section class="section blog" id="blog" aria-label="blog">
+          <div class="container">
+            <p class="section-subtitle text-center has-before">Blog Post</p>
+
+            <h2 class="h2 section-title text-center">
+              Postingan <span class="has-before"> Populer </span>
+            </h2>
+
+            <ul class="blog-list">
+              <li>
+                <div class="blog-card large">
+                  <figure class="card-banner">
+                    <img data-aos="flip-up"
+                      src="gambar anime komputer.jpeg"
+                      width="644"
+                      height="363"
+                      loading="lazy"
+                      alt="Godaddy user flow solution..."
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <a href="#" class="tag">Development</a>
+
+                      <a href="#" class="publish-date">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">2024</span>
+                      </a>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title"
+                        >"Jasa Profesional, Kualitas Terjamin, Harga Terjangkau!"</a
+                      >
+                    </h3>
+
+                    <p class="card-text">
+                      Kami memahami pentingnya layanan berkualitas dengan harga yang tidak menguras kantong. Dengan keahlian profesional, kami siap membantu mewujudkan kebutuhan Anda
+                      di bidang IT dan pemrograman. Dapatkan solusi terbaik tanpa kompromi kualitas, karena kami percaya semua orang berhak
+                       mendapatkan yang terbaik, tanpa harus membayar lebih. Hubungi kami sekarang dan rasakan pelayanan profesional dengan harga bersahabat!
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner">
+                    <img data-aos="flip-up"
+                      src="gambar-hmtl-css.jpeg"
+                      width="202"
+                      height="162"
+                      loading="lazy"
+                      alt="Godaddy user flow solution for every individual"
+                      class=""
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <a href="#" class="tag">Development</a>
+
+                      <a href="#" class="publish-date">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">2024</span>
+                      </a>
+                    </div>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Pengunaaan Bahasa Pemerograman Yang Cukup Complete</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner">
+                    <img data-aos="flip-up"
+                      src="bocil komputer.jpeg"
+                      width="202"
+                      height="162"
+                      loading="lazy"
+                      alt="Business solution for every individual"
+                      class=""
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <a href="#" class="tag">Development</a>
+
+                      <a href="#" class="publish-date">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">2024</span>
+                      </a>
+                    </div>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Dikerjakan Oleh Team Profesional</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner">
+                    <img data-aos="flip-up"
+                      src="gambar komputer.jpeg"
+                      width="202"
+                      height="162"
+                      loading="lazy"
+                      alt="How to gain pro experience ar figma update version"
+                      class=""
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <a href="#" class="tag">Development</a>
+
+                      <a href="#" class="publish-date">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">2024</span>
+                      </a>
+                    </div>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Teknologi Yang Mengikuti Perkembangan zaman </a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top section">
+          <div class="footer-brand">
+            <p class="footer-list-title">X HUNTER PROJECT</p>
+
+            <p class="footer-text">
+              Kami juga memberikan sosial media kami agar memudahkan klien dalam menghubungi kami
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="https://www.instagram.com/xhunterproject?igsh=bWQzdnR0cWFxOG8=" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.tiktok.com/@x_hunter_project?_t=8p0SyKktAkD&_r=1" class="social-link">
+                  <ion-icon name="logo-tiktok"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61565426197020" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-skype"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Usefull Links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Hubungi Kami</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Cara Kerjanya</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Pesan Sekarang</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Jelajahi</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Syarat & Layanan</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Komunitas</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Bantuan Layanan</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Partners</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Saran</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Edukasi</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Instagram post</p>
+            </li>
+
+            <li>
+              <ul class="insta-post">
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img data-aos="flip-up"
+                        src="insta-post-1.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="https://www.instagram.com/xhunterproject?igsh=bWQzdnR0cWFxOG8=" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img data-aos="flip-up"
+                        src="insta-post-2.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="https://www.instagram.com/xhunterproject?igsh=bWQzdnR0cWFxOG8=" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img data-aos="flip-up"
+                        src="insta-post-3.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="https://www.instagram.com/xhunterproject?igsh=bWQzdnR0cWFxOG8=" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img data-aos="flip-up"
+                        src="insta-post-4.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="https://www.instagram.com/xhunterproject?igsh=bWQzdnR0cWFxOG8=" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img data-aos="flip-up"
+                        src="insta-post-5.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="https://www.instagram.com/xhunterproject?igsh=bWQzdnR0cWFxOG8=" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="insta-card">
+                    <figure class="post-banner">
+                      <img data-aos="flip-up"
+                        src="insta-post-6.jpg"
+                        width="77"
+                        height="63"
+                        loading="lazy"
+                        alt="instagram post"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <a href="https://www.instagram.com/xhunterproject?igsh=bWQzdnR0cWFxOG8=" class="card-content">
+                      <ion-icon
+                        name="logo-instagram"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2024 X HUNTER PROJECT.
+          </p>
+
+          <ul class="footer-bottom-list">
+            <li>
+              <a href="#" class="footer-bottom-link">Syarat Dan Layanan</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Privacy policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Login / Signup</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn has-after active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- scroll  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
